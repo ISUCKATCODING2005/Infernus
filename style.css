@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+@font-face {
+  font-family: 'Striker Eureka';
+  src: url('StrikerEurekaPersonalUseCut-nyp1.ttf');
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:url(SIck-background.png) no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  overflow: hidden;
+  
+}
+
+#infernus01 {
+  position:relative;
+  font-size: 200px;
+  color: white;
+  font-family: 'Striker Eureka';
+  text-align: center;
+  top:-50px;
+  text-shadow:
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff;
+}
+
+.btn {
+  --glow-color: rgb(235, 235, 235);
+  --glow-spread-color: rgba(231, 228, 233, 0.781);
+  --btn-color: rgb(57, 57, 58);
+
+  border: 0.25em solid var(--glow-color);
+  padding: 1em 3em;
+  color: var(--glow-color);
+  background-color: var(--btn-color);
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 1em;
+  cursor: pointer;
+
+  box-shadow:
+    0 0 1em 0.25em var(--glow-color),
+    0 0 4em 1em var(--glow-spread-color),
+    inset 0 0 0.75em var(--glow-color);
+
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: var(--glow-color);
+  color: var(--btn-color);
+}
+
+.v{
+   height:10px;
+  width:200px;
+  background-color:rgb(255, 255, 255) 
+
+}
+.h{
+  height:200px;
+  width:10px;
+  background-color:rgb(255, 255, 255) 
+}
+#container1{
+  position:absolute;
+  left:10px;
+  top:10px
+}
+.logo-box {
+  position: fixed;
+  bottom: 350px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+}
+.logo-box a {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+
+  color: white;
+  font-size: 26px;
+  text-decoration: none;
+
+  background: rgba(255,255,255,0.05);
+  border-radius: 12px;
+
+  /* PERFORMANCE */
+  will-change: transform, box-shadow;
+  transition:
+    transform 0.18s cubic-bezier(.2,.8,.2,1),
+    box-shadow 0.18s ease,
+    background 0.18s ease;
+}
+.logo-box a:hover {
+  transform: translateY(-8px) scale(1.12);
+  background: rgba(255,255,255,0.12);
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,0.4),
+    0 0 18px rgba(255,255,255,0.25);
+}
